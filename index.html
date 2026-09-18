@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2nd ENDOSPINE UBECON</title>
+    <link rel="icon" type="image/png" href="/images/Fevicon.png" />
+    <meta name="description" content="Premium medical conference experience for the 2nd ENDOSPINE UBECON." />
+    <meta property="og:title" content="2nd ENDOSPINE UBECON" />
+    <meta property="og:description" content="Premium medical conference experience for the 2nd ENDOSPINE UBECON." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Preload Background Music with fetchpriority high for immediate playback -->
+    <link rel="preload" as="fetch" crossorigin="anonymous" href="/audio/bg-music.mp3" type="audio/mpeg" fetchpriority="high">
+    
+    <!-- Preload Responsive Hero Banner with fetchpriority high and media restrictions -->
+    <link rel="preload" as="image" href="/images/Laxmi-Vilas-Palace2.avif" type="image/avif" media="(min-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/images/Laxmi-Vilas-Palace-Mob.avif" type="image/avif" media="(max-width: 767.98px)" fetchpriority="high">
+    
+    <!-- Critical Inline CSS for fast FCP/LCP -->
+    <style id="critical-css">
+      body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #051024;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      .hero-critical {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5rem 1.5rem 10rem;
+        box-sizing: border-box;
+        background-color: #051024;
+        overflow: hidden;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.35;
+        background-image: url('/images/Laxmi-Vilas-Palace2.avif');
+      }
+      @media (max-width: 767.98px) {
+        .hero-bg {
+          background-image: url('/images/Laxmi-Vilas-Palace-Mob.avif');
+        }
+      }
+      .hero-gradient {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: linear-gradient(to bottom, rgba(5, 16, 36, 0.6), rgba(5, 16, 36, 0.8), #051024);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 10;
+        max-width: 64rem;
+        margin: auto auto 0;
+        width: 100%;
+        animation: fadeInUp 1s ease-out forwards;
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .hero-badge {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 1px solid rgba(41, 171, 226, 0.5);
+        color: #29abe2;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        margin-bottom: 2rem;
+        background-color: rgba(41, 171, 226, 0.1);
+        border-radius: 9999px;
+      }
+      .hero-title {
+        font-size: 3rem;
+        font-family: 'Playfair Display', serif;
+        color: #ffffff;
+        margin-bottom: 2rem;
+        line-height: 1.1;
+        margin-top: 0;
+        font-weight: 400;
+      }
+      @media (min-width: 768px) {
+        .hero-title { font-size: 4.5rem; }
+      }
+      @media (min-width: 1024px) {
+        .hero-title { font-size: 6rem; }
+      }
+      .hero-title-accent {
+        color: #29abe2;
+        font-style: italic;
+        font-weight: 300;
+      }
+      .hero-desc {
+        font-size: 1.125rem;
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 48rem;
+        margin: 0 auto 3rem;
+        line-height: 1.625;
+        font-weight: 300;
+      }
+      @media (min-width: 768px) {
+        .hero-desc { font-size: 1.5rem; }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BaAEQDDd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CFBIUNNU.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
