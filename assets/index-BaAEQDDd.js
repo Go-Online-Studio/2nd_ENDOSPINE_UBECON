@@ -16511,14 +16511,14 @@ function L3() {
 			className: "absolute inset-0 z-0 pointer-events-none",
 			children: [E.jsx("source", {
 				media: "(min-width: 768px)",
-				srcSet: "./images/Laxmi-Vilas-Palace2.avif",
-				type: "image/avif"
+				srcSet: "./images/Laxmi-Vilas-Palace2.webp",
+				type: "image/webp"
 			}), E.jsx("source", {
 				media: "(max-width: 767.98px)",
-				srcSet: "./images/Laxmi-Vilas-Palace-Mob.avif",
-				type: "image/avif"
+				srcSet: "./images/Laxmi-Vilas-Palace-Mob.webp",
+				type: "image/webp"
 			}), E.jsx("img", {
-				src: "./images/Laxmi-Vilas-Palace2.avif",
+				src: "./images/Laxmi-Vilas-Palace2.webp",
 				alt: "Laxmi Vilas Palace",
 				fetchPriority: "high",
 				loading: "eager",
@@ -18328,7 +18328,7 @@ const lC = [{
 	Icon: gM
 }, {
 	title: "Cadaveric workshop",
-	image: "./images/Cadaveric_workshop.avif",
+	image: "./images/Cadaveric_workshop.webp",
 	Icon: dM
 }, {
 	title: "Panel discussion + Re-live surgery",
@@ -18412,22 +18412,22 @@ const uC = [{
 	name: "Dr. Shaishav Shah",
 	role: "UBE Course Director",
 	desc: "Endoscopic Spine Surgeon",
-	image: "./images/Organizing_Committee4.avif"
+	image: "./images/Organizing_Committee4.webp"
 }, {
 	name: "Prof R.G. Aiyer",
 	role: "Patron",
 	desc: "Medical Superintendent, BMC",
-	image: "./images/Organizing_Committee1.avif"
+	image: "./images/Organizing_Committee1.webp"
 }, {
 	name: "Prof H. Mathur",
 	role: "Patron",
 	desc: "HOD, Orthopedics",
-	image: "./images/Organizing_Committee2.avif"
+	image: "./images/Organizing_Committee2.webp"
 }, {
 	name: "Prof A. Udainia",
 	role: "Patron",
 	desc: "HOD, Anatomy",
-	image: "./images/Organizing_Committee3.avif"
+	image: "./images/Organizing_Committee3.webp"
 }, {
 	name: "Prof D. Parmar",
 	role: "Patron",
@@ -18437,36 +18437,36 @@ const uC = [{
 	oC = [{
 		name: "Dr. Jose Machado",
 		location: "Portugal",
-		image: "./images/UBE_International_Faculty1.avif"
+		image: "./images/UBE_International_Faculty1.webp"
 	}, {
 		name: "Dr. Piya Chavalparit",
 		location: "Thailand",
-		image: "./images/UBE_International_Faculty2.avif"
+		image: "./images/UBE_International_Faculty2.webp"
 	}, {
 		name: "Dr. Nadir Benmebarek",
 		location: "Algeria",
-		image: "./images/UBE_International_Faculty3.avif"
+		image: "./images/UBE_International_Faculty3.webp"
 	}, {
 		name: "Dr. Zoryan Saldan",
 		location: "Ukraine",
-		image: "./images/UBE_International_Faculty4.avif"
+		image: "./images/UBE_International_Faculty4.webp"
 	}],
 	rC = [{
 		name: "Dr. Anindya Basu",
 		location: "Kolkata",
-		image: "./images/UBE_National_Faculty1.avif"
+		image: "./images/UBE_National_Faculty1.webp"
 	}, {
 		name: "Dr. Bhupesh Patel",
 		location: "Ahmedabad",
-		image: "./images/UBE_National_Faculty2.avif"
+		image: "./images/UBE_National_Faculty2.webp"
 	}, {
 		name: "Dr. Vardan Kulshreshtha",
 		location: "Karnal",
-		image: "./images/UBE_National_Faculty3.avif"
+		image: "./images/UBE_National_Faculty3.webp"
 	}, {
 		name: "Dr. Raghvendra Raghuvanshi",
 		location: "Bhopal",
-		image: "./images/UBE_National_Faculty5.avif"
+		image: "./images/UBE_National_Faculty5.webp"
 	}],
 	Kf = ({
 		title: e,
@@ -18642,27 +18642,27 @@ const fC = {
 		title: "Re-Live Surgery: Operative Video with Commentary",
 		speaker: "Team Endospine"
 		// location: "Auditorium A"
-	},{
+	}, {
 		time: "02:30 PM - 03:50 PM",
 		title: "FORAMINAL ACCESS, FUSION & SAFETY",
 		speaker: "International Faculty Panel"
 		// location: "Auditorium A"
-	},{
+	}, {
 		time: "03:50 PM - 04:05 PM",
 		title: "Evening Tea / Coffee Break"
 		// location: "Auditorium A"
-	},{
+	}, {
 		time: "04:05 PM - 05:40 PM",
 		title: "CERVICAL & THORACIC UBE"
 		// speaker: "International Faculty Panel",
 		// location: "Auditorium A"
-	},{
+	}, {
 		time: "05:40 PM - 05:50 PM",
 		title: "Closing Remarks & Day 2 Cadaveric Workshop Briefing",
 		speaker: "Organizing Team",
 		// location: "Auditorium A"
 	}
-],
+	],
 	day2: [{
 		time: "08:00 AM - 08:30 AM",
 		title: "Breakfast & Briefing",
@@ -18778,7 +18778,7 @@ function dC() {
 										className: "text-sm font-medium",
 										children: e.speaker
 									})]
-								}), e.locationLink ? E.jsxs("a", {
+								}), e.location && (e.locationLink ? E.jsxs("a", {
 									href: e.locationLink,
 									target: "_blank",
 									rel: "noopener noreferrer",
@@ -18799,7 +18799,7 @@ function dC() {
 										className: "text-sm",
 										children: e.location
 									})]
-								})]
+								}))]
 							})]
 						}, t))
 					}, e)
@@ -19041,7 +19041,7 @@ function pC() {
 		})]
 	})
 }
-const yC = () => typeof window < "u" && window.matchMedia("(max-width: 767.98px)").matches ? "./images/Laxmi-Vilas-Palace-Mob.avif" : "./images/Laxmi-Vilas-Palace2.avif";
+const yC = () => typeof window < "u" && window.matchMedia("(max-width: 767.98px)").matches ? "./images/Laxmi-Vilas-Palace-Mob.webp" : "./images/Laxmi-Vilas-Palace2.webp";
 
 function gC({
 	onLoaded: e
